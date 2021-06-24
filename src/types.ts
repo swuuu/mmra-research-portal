@@ -10,20 +10,20 @@ export enum YearOfStudy {
     MS4,
 }
 
-interface DatabaseItem {
+export interface DatabaseItem {
+    created: string;
     id: UUID;
 }
 
 export interface User extends DatabaseItem {
     email: string;
     name: string;
-    title: string;
 }
 
 export interface Investigator extends User {
     affiliation: string;
     bio?: string;
-    profession: Specialty[];
+    specialties: Specialty[];
     website?: string;
 }
 
