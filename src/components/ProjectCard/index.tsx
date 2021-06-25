@@ -18,7 +18,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 
             <h4>Created: {new Date(project.created)}</h4>
 
-            <h4>Name: {project.name}</h4>
+            <h4>Title: {project.title}</h4>
 
             <h4>Description:</h4>
             <p>{project.description}</p>

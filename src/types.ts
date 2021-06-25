@@ -1,5 +1,5 @@
-export const specialties = ['Radiology', 'Neurology', 'Nephrology', 'Cardiology', 'Respirology', 'Intensive care', 'Obstetrics', 'Gynaecology', 'Neurology', 'General surgery', 'Pediatrics', 'Rheumatology', 'Allergy and immunology', 'Family medicine', 'Public health', 'Emergency medicine', 'Geriatrics', 'Psychiatry', 'Oncology', 'Orthopaedics', 'Dermatology', 'Ophthalmology', 'Pathology', 'Urology', 'Otolaryngology', 'Gastroenterology', 'Endocrinology', 'Cardiac surgery', 'Neurosurgery', 'Vascular surgery', 'Hematology', 'Sports medicine', 'Nuclear medicine'];
-export type Specialty = keyof typeof specialties;
+export const specialties = ['Radiology', 'Neurology', 'Nephrology', 'Cardiology', 'Respirology', 'Intensive care', 'Obstetrics', 'Gynaecology', 'Neurology', 'General surgery', 'Pediatrics', 'Rheumatology', 'Allergy and immunology', 'Family medicine', 'Public health', 'Emergency medicine', 'Geriatrics', 'Psychiatry', 'Oncology', 'Orthopaedics', 'Dermatology', 'Ophthalmology', 'Pathology', 'Urology', 'Otolaryngology', 'Gastroenterology', 'Endocrinology', 'Cardiac surgery', 'Neurosurgery', 'Vascular surgery', 'Hematology', 'Sports medicine', 'Nuclear medicine'] as const;
+export type Specialty = typeof specialties[number];
 
 export type UUID = string;
 
@@ -44,11 +44,11 @@ export interface Project extends DatabaseItem {
         email: string;
         name: string;
     };
-    deadline: Date;
+    deadline: string;
     description: string;
-    name: string;
     otherInvestigators_ids: UUID[];
     PI_id: UUID;
     specialties: Specialty[];
     tasks: string[];
+    title: string;
 }

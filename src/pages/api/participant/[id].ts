@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import { fetchInvestigator } from '@/data/backend';
+import { fetchParticipant } from '@/data/backend';
 import type { UUID } from '@/types';
 
 export default async function handler(
@@ -8,7 +8,7 @@ export default async function handler(
     res: NextApiResponse
 ) {
     const id = req.query.id as UUID;
-    const { data, error } = await fetchInvestigator(id);
+    const { data, error } = await fetchParticipant(id);
 
     if (error)
         res.status(500).json(error);
