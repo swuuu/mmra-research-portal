@@ -1,16 +1,49 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0 10%;
+	margin: 0;
+	/* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 50px;
+}
+
+p {
+	margin: 0;
+}
+
+.main {
+	text-align: center;
+  padding-top: 5%;
+}
+
+.main-para {
+	font-family: "Noto Serif", serif;
+	line-height: 1.9;
+	font-weight: 400;
+	font-size: 17px;
+  margin-top: 50px;
+}
+
+
+/* Projects Section */
+
+.tabs-body-container {
+	padding: 2% 0;
 }

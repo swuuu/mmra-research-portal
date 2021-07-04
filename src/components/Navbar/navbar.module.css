@@ -1,0 +1,35 @@
+.navbar {
+	/* margin-left: calc(50% - 50vw);
+	width: 100vw; */
+    padding: 2% 0;
+}
+
+.navLink {
+	padding: 0 1.75%;
+}
+
+.navLink:not(.brandName) {
+    font-size: 1.1em;
+    margin-bottom: 0;
+    
+}
+
+.navLink:hover:not(.brandName) {
+	cursor: pointer;
+}
+
+.brandName {
+	color: #da0037 !important;
+    font-size: 1.5em;
+}
+
+.pagesLink {
+    margin: 0;
+}
+
+.pagesLink:hover {
+    color: #da0037;
+    border-bottom: 3px solid #da0037;
+    position: relative;
+    
+}
